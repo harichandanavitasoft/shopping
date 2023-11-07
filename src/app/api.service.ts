@@ -9,4 +9,8 @@ export class ApiService {
   private getUrl = 'https://fakestoreapi.com/products';
 
   constructor(private http: HttpClient) { }
+  getData() {
+    return this.http.get(this.getUrl);
+
+  }
 }
