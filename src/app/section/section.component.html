@@ -1,3 +1,9 @@
 <a routerLink="header">header</a>
 <br>
 <a routerLink="footer">footer</a>
+<ul>
+    <li *ngFor="let row of apiData">
+        <p>{{row.title}}</p>
+        <img src="{{row.image}}">
+    </li>
+</ul>
